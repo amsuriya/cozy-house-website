@@ -56,18 +56,21 @@
         </div>
     </header>
     <div id="sub-banner" class="flex"></div>  
+    <div class="row justify-content-center" style="padding:10px;">
+        <div class="form__title">Apply for Adoption</div>
+        <p class="form__desc">
+            If you are interested in helping find a home for one of our furry friends, please fill out the form so that we can make sure you and your future pet are a perfect fit.
+        </p>
+    </div>
     <form id="form">
+        
         <div class="container">
             <div class="row justify-content-left">                
-                <div class="form__title">Apply for Adoption</div>
-                <p class="form__desc">
-                    If you are interested in helping find a home for one of our furry friends, please fill out the form so that we can make sure you and your future pet are a perfect fit.
-                </p>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <label for="FirstName" class="form__label required">First Name</label>
                     <input required type="text" class="form__input" name="FirstName" id="FirstName" placeholder="John">
                 </div> 
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <label for="LastName" class="form__label required">Last Name</label>
                     <input required type="text" class="form__input" name="LastName" id="LastName" placeholder="Doe">
                 </div> 
@@ -85,7 +88,7 @@
                     </label>
                 </div>
                 <div class="col-md-12"></div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <label for="phone" class="form__label required">Telephone number</label>
                     <input required type="tel" class="form__input" name="phone" id="phone" oninput="this.value = this.value.replace(/[^0-9-]/g, '').replace(/(\..*)\./g, '$1');" maxlength="12" placeholder="###-###-####">
                     <script>
@@ -97,14 +100,14 @@
                         });
                     </script>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <label for="Email" class="form__label required">E-mail Address</label>
                     <input required type="" class="form__input" name="Email" id="Email" placeholder="name@example.com">
                 </div>
                 <div class="col-md-4">
                     <label for="Address" class="form__label">Address</label>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <input type="text" class="form__input" name="Address" id="Address" placeholder="Street">
                 </div>
                 <div class="col-md-5">
@@ -117,7 +120,7 @@
                     <input type="text" class="form__input" name="Address" id="Address" placeholder="Zip">
                 </div>
                 <div class="col-md-12"> <p> </p></div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <label for="ResidenceType" class="form__label">Residence Type</label>
                     <select class="form__select" name="ResidenceType" id="ResidenceType">
                         <option value="none">--Select--</option>
@@ -135,7 +138,7 @@
                     <input type="number" class="form__input" name="NumResidents" id="NumResidents" min="1" max="99" placeholder="(1-99)">
                 </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <label for="PetType" class="form__label">What kind of pet are you looking for?</label>
                     <select class="form__select" name="PetType" id="PetType">
                         <option value="none">--Select--</option>
@@ -165,35 +168,32 @@
                 </div>
                 
                 <div class="col-md-12"></div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <label for="Date" class="form__label">Date</label>
                     <input type="date" class="form__input" name="Date" id="Date">
                 </div>
-                <div class="col-md-12"></div>
-                <div class="col-md-4"></div>
-                <div class="col-md-2">
-                    <button class="card_number" onclick="confirmation()">Submit</button>
-                    <script>
-                        function confirmation() {
-                            var val1 = document.getElementById("phone").value.trim();
-                            var val2 = document.getElementById("Email").value.trim();
-                            var val3 = document.getElementById("FirstName").value.trim();
-                            var val4 = document.getElementById("LastName").value.trim();
-                            
-                            if (val1 === "" || val2 === "" || val3 === "" || val4 === "") {
-                                alert("Please fill in all required fields.");
-                                // event.preventDefault(); // Prevent form submission
-                            } 
-                            else {
-                                alert("Thank you for your submission!");
-                            }
-                        }
-                    </script>
-                </div> 
             </div>
         </div>
+        
     </form>
-    
+    <div class="row justify-content-center" style="padding:10px;">
+        <button class="card_number" onclick="confirmation()">Submit</button>
+    </div>
+    <script>
+        function confirmation() {
+            var val1 = document.getElementById("phone").value.trim();
+            var val2 = document.getElementById("Email").value.trim();
+            var val3 = document.getElementById("FirstName").value.trim();
+            var val4 = document.getElementById("LastName").value.trim();
+            if (val1 === "" || val2 === "" || val3 === "" || val4 === "") {
+                alert("Please fill in all required fields.");
+                // event.preventDefault(); // Prevent form submission
+            } 
+            else {
+                alert("Thank you for your submission!");
+            }
+        }
+    </script>
 </body>
 <a class="top-link hide" href="" id="js-top">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 3"><path d="M12 6H0l6-6z"/></svg>
