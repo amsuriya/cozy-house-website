@@ -895,6 +895,12 @@ button.card_number {
     border: 1px solid #888;
     width: 25%; 
 }
+#petModalImage {
+    display: block; /* This will allow `margin: auto` to work */
+    margin: auto; /* This will automatically center the image in the block (horizontally) */
+    max-width: 100%; /* Optional: ensures the image is not wider than its container */
+    height: auto; /* Optional: ensures the image maintains its aspect ratio */
+  }
 
 .close-button {
     color: #aaa;

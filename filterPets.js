@@ -233,15 +233,15 @@ function showPetDetails(pet) {
     document.getElementById('petModalImage').src = pet.image;
     document.getElementById('petModalImage').alt = pet.name;
     document.getElementById('petModalName').textContent = pet.name;
-    document.getElementById('petModalAge').textContent = `Age: ${pet.age}`;
+    document.getElementById('petModalAge').textContent = pet.age;
+    document.getElementById('petModalGender').textContent = pet.gender;
+    document.getElementById('petModalLocation').textContent = pet.location;
+    document.getElementById('petModalBreed').textContent = pet.breed;
     document.getElementById('petModalDescription').textContent = pet.description;
-    // location, gender and breed
-    document.getElementById('petModalLocation').textContent = `Location: ${pet.location}`;
-    document.getElementById('petModalGender').textContent   = `Gender: ${pet.gender}`;
-    document.getElementById('petModalBreed').textContent    = `Breed: ${pet.breed}`;
 
     document.getElementById('petDetailsModal').style.display = 'block';
 }
+
 
 
 // Close the modal when the close button is clicked
