@@ -105,8 +105,14 @@ a:hover {
 }
 
 .form__title {
+    /* font-size: 2em;
+    font-weight: 600; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 300;
+    letter-spacing: 2px;
+
 }
 
 .form__label {
