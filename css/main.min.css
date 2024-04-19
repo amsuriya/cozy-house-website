@@ -112,7 +112,7 @@ a:hover {
     font-size: 2em;
     font-weight: 300;
     letter-spacing: 2px;
-
+    padding-top: 0.5em;
 }
 
 .form__label {
@@ -451,6 +451,14 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4em 0;
+}
+
+/* section#about {
+    background: rgba(0, 0, 0, 5%);
+} */
+
+#filter_pets{
+    background: rgba(0, 0, 0, 5%);
 }
 
 /*About section*/

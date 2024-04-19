@@ -87,88 +87,89 @@
     </section>
 
     <!-- Updated Filter Section -->
-    <section id="filter">
-        <div class="container">
-            <h2 class = "form__title" style="text-align: center;">Filter Pets</h2>
-            <form id="filterForm">
-                <!-- Type -->
-                <div class="col-md-3">
-                    <label for="type" class = "form__label">Type of pet:</label>
-                    <select id="type" name="type" class = "form__select">
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
-                </div>
-    
-                <!-- Minimum Age -->
-                <div class="col-md-3">
-                    <label for="ageMin" class = "form__label">Min Age:</label>
-                    <input type="range" id="ageMin" name="ageMin" min="0" max="20" value="0" oninput="ageMinOutput.value = ageMin.value">
-                    <output id="ageMinOutput">0</output> years
-                </div>
-    
-                <!-- Maximum Age -->
-                <div class="col-md-4">
-                    <label for="ageMax" class = "form__label">Max Age:</label>
-                    <input type="range" id="ageMax" name="ageMax" min="0" max="20" value="20" oninput="ageMaxOutput.value = ageMax.value">
-                    <output id="ageMaxOutput">20</output> years
-                </div>
-
-                <!-- Breed -->
-                <div class="col-md-3">
-                    <label for="breed" class = "form__label">Breed:</label>
-                    <select id="breed" name="breed" class = "form__select">
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
-                </div>
-    
-                <!-- Location -->
-                <div class="col-md-3">
-                    <label for="location" class = "form__label">Location:</label>
-                    <select id="location" name="location" class = "form__select">
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
-                </div>
-    
-                <!-- Gender -->
-                <div class="col-md-3">
-                    <label for="gender" class = "form__label">Gender:</label>
-                    <select id="gender" name="gender" class = "form__select">
-                        <!-- Options will be populated by JavaScript -->
-                    </select>
-                </div>
-            </form>
-        </div>
-    </section>
-    
-    
-
-
-    <section class="py-50" id="pets">
-        <div class="container">
-            <h2>Our friends who<br>are looking for a house</h2>
-            <div class="slider_wrapper">
-                <div class="slider_controls">
-                    <button class="slider_arrow slider_arrow_left">
-                        <img src="images/SVG Icon/leftarrow.svg" alt="left arrow" width="50">
-                    </button>
-                    <div class="pets_slider">
-                        <!-- <div class="slide" id="Katrine">
-                            <figure> <img src="images/Katrine.png" width="270" /> </figure>
-                            <p>Katrine</p><a>Learn more</a>
-                        </div> -->
+    <div id="filter_pets">
+        <section id="filter">
+            <div class="container">
+                <h2 class = "form__title" style="text-align: center;">Filter Pets</h2>
+                <form id="filterForm">
+                    <!-- Type -->
+                    <div class="col-md-3">
+                        <label for="type" class = "form__label">Type of pet:</label>
+                        <select id="type" name="type" class = "form__select">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
                     </div>
-                    <button class="slider_arrow slider_arrow_right">
-                        <img src="images/SVG Icon/rightarrow.svg" alt="right arrow" width="50">
-                    </button>
-                </div>
-                <div class="slider_nav"> <a title="See Katrine" alt="a grey female cat standing" href="#Katrine"></a> <a
-                    title="See Jennifer" alt="a white female puppy with brown ears sitting" href="#Jennifer"></a> <a
-                    title="See Woody" alt="a big brown dog sitting" href="#Woody"></a> </div><a
-                    title="see more pets" href="">Get to know the rest</a>
+        
+                    <!-- Minimum Age -->
+                    <div class="col-md-3">
+                        <label for="ageMin" class = "form__label">Min Age:</label>
+                        <input type="range" id="ageMin" name="ageMin" min="0" max="20" value="0" oninput="ageMinOutput.value = ageMin.value">
+                        <output id="ageMinOutput">0</output> years
+                    </div>
+        
+                    <!-- Maximum Age -->
+                    <div class="col-md-4">
+                        <label for="ageMax" class = "form__label">Max Age:</label>
+                        <input type="range" id="ageMax" name="ageMax" min="0" max="20" value="20" oninput="ageMaxOutput.value = ageMax.value">
+                        <output id="ageMaxOutput">20</output> years
+                    </div>
+
+                    <!-- Breed -->
+                    <div class="col-md-3">
+                        <label for="breed" class = "form__label">Breed:</label>
+                        <select id="breed" name="breed" class = "form__select">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+        
+                    <!-- Location -->
+                    <div class="col-md-3">
+                        <label for="location" class = "form__label">Location:</label>
+                        <select id="location" name="location" class = "form__select">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+        
+                    <!-- Gender -->
+                    <div class="col-md-3">
+                        <label for="gender" class = "form__label">Gender:</label>
+                        <select id="gender" name="gender" class = "form__select">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                </form>
             </div>
-        </div>
-    </section>
-    
+        </section>
+        
+        
+
+
+        <section class="py-50" id="pets">
+            <div class="container">
+                <h2>Our friends who<br>are looking for a house</h2>
+                <div class="slider_wrapper">
+                    <div class="slider_controls">
+                        <button class="slider_arrow slider_arrow_left">
+                            <img src="images/SVG Icon/leftarrow.svg" alt="left arrow" width="50">
+                        </button>
+                        <div class="pets_slider">
+                            <!-- <div class="slide" id="Katrine">
+                                <figure> <img src="images/Katrine.png" width="270" /> </figure>
+                                <p>Katrine</p><a>Learn more</a>
+                            </div> -->
+                        </div>
+                        <button class="slider_arrow slider_arrow_right">
+                            <img src="images/SVG Icon/rightarrow.svg" alt="right arrow" width="50">
+                        </button>
+                    </div>
+                    <div class="slider_nav"> <a title="See Katrine" alt="a grey female cat standing" href="#Katrine"></a> <a
+                        title="See Jennifer" alt="a white female puppy with brown ears sitting" href="#Jennifer"></a> <a
+                        title="See Woody" alt="a big brown dog sitting" href="#Woody"></a> </div><a
+                        title="see more pets" href="">Get to know the rest</a>
+                </div>
+            </div>
+        </section>
+    </div>   
     <div id="petDetailsModal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
