@@ -136,7 +136,7 @@ a:hover {
 }
 
 .form__select {
-    appearance: none;
+    /* appearance: none; */
     width: 100%;
     max-width: 600px; 
 
