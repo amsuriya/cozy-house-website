@@ -168,6 +168,10 @@ a:hover {
     cursor: pointer;
 }
 
+.date{
+    cursor: pointer;
+}
+
 @media screen and (min-width: 576px) {
     .col-xs-6 {
         -ms-flex: 0 0 50%;
@@ -836,8 +840,13 @@ button.card_number {
     margin-right: 10px;
 }
 
-#filterForm input[type=range], #filterForm select, #filterForm output {
+#filterForm select, #filterForm output {
     margin-bottom: 10px;
+}
+
+#filterForm input[type=range]{
+    margin-bottom: 10px;
+    width: 75%;
 }
 
 /* You might need to adjust these styles based on your specific design */
